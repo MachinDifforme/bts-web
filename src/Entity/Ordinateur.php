@@ -15,10 +15,10 @@ class Ordinateur
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 6)]
+    #[ORM\Column(length: 32)]
     private ?string $nom = null;
 
-    #[ORM\Column(length: 16, nullable: true)]
+    #[ORM\Column(length: 32, nullable: true)]
     private ?string $os = null;
 
     #[ORM\Column(nullable: true)]

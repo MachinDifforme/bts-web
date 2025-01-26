@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UsersController!{% endblock %}
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="d-flex flex-wrap">
+{% for user in users %}
+    <div class="card border-left-primary shadow h-100 p-2 listDiv">
+        {{user.nom}}
+    </div>
+{% endfor %}
+</div>
+{% endblock %}
